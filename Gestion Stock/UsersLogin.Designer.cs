@@ -106,7 +106,7 @@
             this.textBox2.Location = new System.Drawing.Point(161, 216);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 32);
+            this.textBox2.Size = new System.Drawing.Size(253, 49);
             this.textBox2.TabIndex = 6;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -124,10 +124,10 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(161, 311);
+            this.textBox1.Location = new System.Drawing.Point(161, 320);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 32);
+            this.textBox1.Size = new System.Drawing.Size(253, 43);
             this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -146,14 +146,14 @@
             // 
             this.Mdps_login.AutoSize = true;
             this.Mdps_login.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mdps_login.Location = new System.Drawing.Point(156, 268);
+            this.Mdps_login.Location = new System.Drawing.Point(156, 281);
             this.Mdps_login.Name = "Mdps_login";
             this.Mdps_login.Size = new System.Drawing.Size(142, 25);
             this.Mdps_login.TabIndex = 2;
             this.Mdps_login.Text = "Mot de passe :";
             this.Mdps_login.Click += new System.EventHandler(this.Mdps_login_Click);
             // 
-            // Form1
+            // UsersLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -161,7 +161,7 @@
             this.ClientSize = new System.Drawing.Size(811, 512);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "UsersLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

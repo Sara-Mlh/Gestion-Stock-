@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Gestion_Stock
 {
+     
     public partial class UsersLogin : Form
     {
         public UsersLogin()
@@ -69,9 +70,12 @@ namespace Gestion_Stock
         AdminLogin form2 = new AdminLogin();
         private void label3_Click(object sender, EventArgs e)
         {
-            this.Close();
-        
+            MessageBox.Show("Bienvenue administrateur");
+            
             form2.Show();
+            this.Hide();
+             
+            
            
         }
 

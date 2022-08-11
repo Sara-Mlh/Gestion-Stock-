@@ -91,7 +91,7 @@
             // MdpsAdmin
             // 
             this.MdpsAdmin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MdpsAdmin.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MdpsAdmin.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MdpsAdmin.Location = new System.Drawing.Point(184, 205);
             this.MdpsAdmin.Multiline = true;
             this.MdpsAdmin.Name = "MdpsAdmin";
@@ -110,7 +110,7 @@
             this.Mdps_login.Text = "Mot de passe :";
             this.Mdps_login.Click += new System.EventHandler(this.Mdps_login_Click);
             // 
-            // Form2
+            // AdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +123,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "AdminLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);

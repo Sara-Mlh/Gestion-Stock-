@@ -9,5 +9,9 @@ C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion Stock.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion Stock.exe
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion Stock.pdb
-C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.Form2.resources
-C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.Form3.resources
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\bin\Debug\Guna.UI.dll
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.UsersLogin.resources
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.AdminLogin.resources
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.AdminArticles.resources
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion Stock.csproj.CopyComplete

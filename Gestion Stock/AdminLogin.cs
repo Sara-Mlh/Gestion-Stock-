@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,10 @@ namespace Gestion_Stock
         {
             InitializeComponent();
         }
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Documents\DataStock.mdf;Integrated Security=True;Connect Timeout=30");
 
+        DataTable data = new DataTable();
+        DataSet ds = new DataSet();
         private void Form2_Load(object sender, EventArgs e)
         {
 
@@ -32,12 +36,23 @@ namespace Gestion_Stock
         {
 
         }
-
+        string nameAdmin = "ADMIN";
+        AdminArticles adminArticles = new AdminArticles();
         private void button1_Click(object sender, EventArgs e)
         {
-            LoginAdminBTN.BackColor = Color.Black;
+            LoginAdminBTN.BackColor = Color.Green;
+            if (nameAdmin == "ADMIN" && MdpsAdmin.Text == "ADMINMDPS") /* VERIFIER DE LA BASE DE DONNEES */
+            {
+                
+               MessageBox.Show("Connexion réussite");
+                this.Hide();
+                adminArticles.Show();
 
-           
+            }
+            else
+            {
+                MessageBox.Show("Mot de passe erroné");
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

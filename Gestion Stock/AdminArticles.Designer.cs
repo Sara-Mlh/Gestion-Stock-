@@ -55,6 +55,7 @@
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ArticlesDGV = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -62,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArticlesDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -209,7 +211,7 @@
             this.qtArtTB.Location = new System.Drawing.Point(752, 187);
             this.qtArtTB.Multiline = true;
             this.qtArtTB.Name = "qtArtTB";
-            this.qtArtTB.Size = new System.Drawing.Size(61, 36);
+            this.qtArtTB.Size = new System.Drawing.Size(102, 36);
             this.qtArtTB.TabIndex = 1;
             this.qtArtTB.TextChanged += new System.EventHandler(this.bunifuCustomTextbox1_TextChanged);
             // 
@@ -219,9 +221,9 @@
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(747, 154);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(94, 25);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(107, 25);
             this.bunifuCustomLabel1.TabIndex = 2;
-            this.bunifuCustomLabel1.Text = "Quantité";
+            this.bunifuCustomLabel1.Text = "Quantité :";
             // 
             // bunifuCustomLabel2
             // 
@@ -298,6 +300,7 @@
             this.AjouterArt.TabIndex = 9;
             this.AjouterArt.Text = "Ajouter";
             this.AjouterArt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AjouterArt.Click += new System.EventHandler(this.AjouterArt_Click);
             // 
             // ModifierArt
             // 
@@ -400,6 +403,7 @@
             this.ResetButton.TabIndex = 12;
             this.ResetButton.Text = "Reset";
             this.ResetButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // nomArtTTB
             // 
@@ -452,12 +456,24 @@
             this.panel2.Size = new System.Drawing.Size(6, 71);
             this.panel2.TabIndex = 18;
             // 
+            // ArticlesDGV
+            // 
+            this.ArticlesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ArticlesDGV.Location = new System.Drawing.Point(354, 511);
+            this.ArticlesDGV.Name = "ArticlesDGV";
+            this.ArticlesDGV.RowHeadersWidth = 51;
+            this.ArticlesDGV.RowTemplate.Height = 24;
+            this.ArticlesDGV.Size = new System.Drawing.Size(971, 300);
+            this.ArticlesDGV.TabIndex = 19;
+            this.ArticlesDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ArticlesDGV_CellContentClick);
+            // 
             // AdminArticles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1370, 839);
+            this.Controls.Add(this.ArticlesDGV);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.bunifuCustomLabel6);
             this.Controls.Add(this.bunifuCustomLabel5);
@@ -485,6 +501,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArticlesDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,5 +535,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView ArticlesDGV;
     }
 }
