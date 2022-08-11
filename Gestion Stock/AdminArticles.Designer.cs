@@ -205,6 +205,7 @@
             // 
             this.qtArtTB.BorderColor = System.Drawing.Color.SeaGreen;
             this.qtArtTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qtArtTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qtArtTB.Location = new System.Drawing.Point(752, 187);
             this.qtArtTB.Multiline = true;
             this.qtArtTB.Name = "qtArtTB";
@@ -245,6 +246,7 @@
             // descArtTB
             // 
             this.descArtTB.BorderColor = System.Drawing.Color.SeaGreen;
+            this.descArtTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descArtTB.Location = new System.Drawing.Point(924, 184);
             this.descArtTB.Multiline = true;
             this.descArtTB.Name = "descArtTB";
@@ -402,6 +404,7 @@
             // nomArtTTB
             // 
             this.nomArtTTB.BorderColor = System.Drawing.Color.SeaGreen;
+            this.nomArtTTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomArtTTB.Location = new System.Drawing.Point(421, 184);
             this.nomArtTTB.Multiline = true;
             this.nomArtTTB.Name = "nomArtTTB";
