@@ -1,7 +1,6 @@
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\bin\Debug\Gestion Stock.exe.config
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\bin\Debug\Gestion Stock.exe
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\bin\Debug\Gestion Stock.pdb
-C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion Stock.csproj.AssemblyReference.cache
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion Stock.csproj.SuggestedBindingRedirects.cache
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.Form1.resources
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.Properties.Resources.resources
@@ -15,3 +14,5 @@ C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.AdminLogin.resources
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.AdminArticles.resources
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion Stock.csproj.CopyComplete
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion Stock.csproj.AssemblyReference.cache

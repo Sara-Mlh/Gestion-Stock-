@@ -39,6 +39,9 @@
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\..\Downloads\Programmation\Frameworks\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\Downloads\Programmation\Frameworks\packages projet scolarite\Guna.UI2.WinForms.2.0.2.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

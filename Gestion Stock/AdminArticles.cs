@@ -18,11 +18,12 @@ namespace Gestion_Stock
         {
             InitializeComponent();
             DisplayArticles();
+            clearArticleTB();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Documents\DataStock.mdf;Integrated Security=True;Connect Timeout=30");
-        DataTable data = new DataTable();
-        DataSet ds = new DataSet();
+        
+        
 
 
         private void DisplayArticles()
@@ -31,12 +32,13 @@ namespace Gestion_Stock
             string query = "select * from ArticleTB";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-
-            sda.Fill(data);
+            var ds = new DataSet();
+            //DataTable data = new DataTable();
+            //sda.Fill(data);
             sda.Fill(ds);
             ArticlesDGV.DataSource = ds.Tables[0];
-            var pos = 0;
-            DisplayText(pos);
+            //var pos = 0;
+            //DisplayText(pos);
 
             con.Close();
 
@@ -44,12 +46,13 @@ namespace Gestion_Stock
 
         public void DisplayText(int rowno)
         {
+            DisplayArticles();
 
-           nomArtTTB.Text = data.Rows[rowno][0].ToString();
+           // nomArtTTB.Text = data.Rows[rowno][1].ToString();
             // NomTB.Text = ds.Rows[rowno][1].ToString();
             // PrenomTB.Text = ds.Rows[rowno][2].ToString();
             // SectionTB.Text = ds.Rows[rowno][3].ToString();
-            qtArtTB.Text = data.Rows[rowno][2].ToString();
+            //qtArtTB.Text = data.Rows[rowno][2].ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -92,7 +95,7 @@ namespace Gestion_Stock
 
 
 
-            if (nomArtTTB.Text == "" || qtArtTB.Text == "" || descArtTB.Text == "" )
+            if (nomArtTTB.Text == "" || qtArtTB.Text == "" )
             {
                 MessageBox.Show("Les cases nom de l'article et la quantité sont obligatoires \n Veuillez les remplir toutes les deux SVP ");
             }
@@ -110,7 +113,9 @@ namespace Gestion_Stock
                     MessageBox.Show("Article ajouté.");
 
                     con.Close();
-                    //  DisplayArticles();
+               
+                    DisplayArticles();
+                    
                     clearArticleTB();
 
                 }
@@ -140,13 +145,80 @@ namespace Gestion_Stock
 
         private void ArticlesDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
-                nomArtTTB.Text = ArticlesDGV.SelectedRows[0].Cells[2].Value.ToString();
-                qtArtTB.Text = ArticlesDGV.SelectedRows[0].Cells[3].Value.ToString();
-                descArtTB.Text = ArticlesDGV.SelectedRows[0].Cells[4].Value.ToString();
-               
+        
+
+                nomArtTTB.Text = ArticlesDGV.SelectedRows[0].Cells[1].Value.ToString();
+                qtArtTB.Text = ArticlesDGV.SelectedRows[0].Cells[2].Value.ToString();
+                descArtTB.Text = ArticlesDGV.SelectedRows[0].Cells[3].Value.ToString();
+
 
             
+            
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ModifierArt_Click(object sender, EventArgs e)
+        {
+            if (nomArtTTB.Text == "" || qtArtTB.Text == "" )
+            {
+                MessageBox.Show("Informations manquantes");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(" update ArticleTB set Designation = @AD,Quantite= @AQ,Description = @ADES where IdArticle=@Akey", con);
+                    cmd.Parameters.AddWithValue("@AD", nomArtTTB.Text);
+                    cmd.Parameters.AddWithValue("@AQ", qtArtTB.Text); 
+                    cmd.Parameters.AddWithValue("@ADES", descArtTB.Text);
+                    cmd.Parameters.AddWithValue("@Akey", key);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Article mis à jour ");
+
+                    con.Close();
+                    DisplayArticles();
+                    clearArticleTB();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+        int key = 0;
+        private void SupprimerArt_Click(object sender, EventArgs e)
+        {
+            if (nomArtTTB.Text == "" || qtArtTB.Text == "")
+            {
+                MessageBox.Show("Informations manquantes, Veuillez choisir l'article à supprimer");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(" delete from ArticleTB where Designation = @AD ", con);
+                    cmd.Parameters.AddWithValue("@AD", nomArtTTB.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Article supprimé");
+
+                    con.Close();
+                    DisplayArticles();
+                    clearArticleTB();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }

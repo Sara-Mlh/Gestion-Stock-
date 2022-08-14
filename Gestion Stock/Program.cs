@@ -20,7 +20,7 @@ namespace Gestion_Stock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminLogin());
+            Application.Run(new AdminArticles());
         }
     }
 }
