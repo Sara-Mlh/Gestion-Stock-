@@ -30,6 +30,7 @@ namespace Gestion_Stock
         {
             MdpsAdmin.PasswordChar = '*';
             MdpsAdmin.UseSystemPasswordChar = false;
+         
         }
 
         private void Mdps_login_Click(object sender, EventArgs e)

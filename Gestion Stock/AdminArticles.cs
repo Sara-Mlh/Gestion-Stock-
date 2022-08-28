@@ -22,8 +22,6 @@ namespace Gestion_Stock
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Documents\DataStock.mdf;Integrated Security=True;Connect Timeout=30");
-        
-        
 
 
         private void DisplayArticles()
@@ -126,10 +124,6 @@ namespace Gestion_Stock
             }
 
 
-
-
-
-
         }
         private void clearArticleTB()
         {
@@ -142,7 +136,7 @@ namespace Gestion_Stock
         {
             clearArticleTB();
         }
-
+        int key = 0;
         private void ArticlesDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         
@@ -151,7 +145,14 @@ namespace Gestion_Stock
                 qtArtTB.Text = ArticlesDGV.SelectedRows[0].Cells[2].Value.ToString();
                 descArtTB.Text = ArticlesDGV.SelectedRows[0].Cells[3].Value.ToString();
 
-
+              if(nomArtTTB.Text=="")
+            {
+                key = 0;
+            }
+              else
+            {
+                key = Convert.ToInt32(ArticlesDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
             
             
         }
@@ -192,7 +193,7 @@ namespace Gestion_Stock
                 }
             }
         }
-        int key = 0;
+        
         private void SupprimerArt_Click(object sender, EventArgs e)
         {
             if (nomArtTTB.Text == "" || qtArtTB.Text == "")
@@ -219,6 +220,32 @@ namespace Gestion_Stock
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+       AdminServices serviceswind = new AdminServices();
+        AdminUsers userswin = new AdminUsers();
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            userswin.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            userswin.Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            serviceswind.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            serviceswind.Show();
+            this.Hide();
         }
     }
 }
