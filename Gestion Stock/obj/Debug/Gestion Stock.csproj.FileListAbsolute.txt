@@ -38,3 +38,4 @@ C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock - Copie\Gestio
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock - Copie\Gestion Stock\obj\Debug\Gestion Stock.csproj.CopyComplete
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock - Copie\Gestion Stock\obj\Debug\Gestion Stock.exe
 C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock - Copie\Gestion Stock\obj\Debug\Gestion Stock.pdb
+C:\Users\ASUS\Documents\Visual Studio 2022\Projects\Gestion Stock\Gestion Stock\obj\Debug\Gestion_Stock.AdminHome.resources

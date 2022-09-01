@@ -55,6 +55,9 @@ namespace Gestion_Stock
 
         private void label1_Click(object sender, EventArgs e)
         {
+            AdminHome adminhome = new AdminHome();
+            adminhome.Show();
+            this.Hide();
 
         }
 
@@ -221,30 +224,40 @@ namespace Gestion_Stock
                 }
             }
         }
-       AdminServices serviceswind = new AdminServices();
-        AdminUsers userswin = new AdminUsers();
+      
+        
 
         private void label5_Click(object sender, EventArgs e)
-        {
+        {AdminUsers userswin = new AdminUsers();
             userswin.Show();
             this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            AdminUsers userswin = new AdminUsers();
             userswin.Show();
             this.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
+            AdminServices serviceswind = new AdminServices();
             serviceswind.Show();
             this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            AdminServices serviceswind = new AdminServices();
             serviceswind.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AdminHome adminhome = new AdminHome();
+            adminhome.Show();
             this.Hide();
         }
     }
